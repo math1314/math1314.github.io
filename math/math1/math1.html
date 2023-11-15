@@ -1,0 +1,248 @@
+<html>
+ 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="./css/2.css" >
+<title id="title">MATH测试</title>
+<script src="./js/1.js"></script>
+</head>
+ 
+<body onload="greet()" >
+ 
+<!-- A introduction of the quiz.-->
+<div>
+<h3>数学测试（©猫耳网络）</h3>
+<p>这是一些比较有难度的测试题（共120分）</p>
+</div>
+ 
+<!-- Collect user information-->
+<div>
+<form>
+<fieldset id="grey">
+<legend>请输入你的名字和性别</legend>
+Your name:<br/>
+<input type="text" name="Your name" onfocus="changeColor(this)"><br/>
+男
+<input type="radio" checked="checked" name="sex",value="male"/>
+女
+<input type="radio" checked="checked" name="sex",value="male"/>
+沃尔玛购物袋
+<input type="radio" checked="checked" name="sex",value="male"/>
+人妖
+<input type="radio" checked="checked" name="sex",value="male"/>
+猫
+<input type="radio" checked="checked" name="sex",value="male"/>
+狗
+<input type="radio" name="sex",value="male"/><br/>
+</filedset>
+</form>
+</div>
+ 
+<!-- the quiz.-->
+<form action="",method="post">
+<fieldset>
+<legend>范围：几何，代数</legend>
+ 
+<!--part1-->
+<fieldset>
+<h3>单选题（每题5分,第7题特例，做对得20分）</h3>
+<div id="grey">
+<fieldset class ="question">
+<p id="1">（难）问题1:若定义在△ABC中，AB=AC=2，边BC上有1000个不同的点P1，P2，......，P1000，如果
+    记ki=APi2=BPi*PiC（i=1,2,3,4......1000），则k1+k2+...+k1000等于（	）.</p>
+<label><input type="radio" name="answer1" value="5"/>4000</label>
+<br />
+<label ><input type="radio" name="answer1"  value="0"/>2000</label>
+<br/>
+<label ><input type="radio" name="answer1" value="0"/>3000</label>
+</fieldset>
+ 
+<fieldset class ="question">
+<p id="2">（难）问题2:在△ABC中，已知BD和CE分别是两边上的中线，并且BD⊥CE，BD=4,CE=6.那么，
+    △ABC的面积等于（	）.</p>
+<label><input type="radio" name="answer2" value="0" />14</label>
+<br />
+<label id="2"><input type="radio" name="answer2" value="5" />16<label>
+<br/>
+<label><input type="radio" name="answer2" value="0"/>12</label>
+</fieldset>
+ 
+<fieldset class ="question">
+<p id="3">（简单）问题3: 已知关于x的方程x2+x﹣a=0的一个根为2，则另一个根是（　　）</p>
+<label id="3"><input type="radio" name="answer3" value="5" />-3</label>
+<br />
+<label><input type="radio" name="answer3" value="0"/>-2</label>
+<br/>
+<label><input type="radio" name="answer3" value="0"/>1</label>
+</fieldset>
+ 
+<fieldset class ="question">
+<p id="4">（简单）问题4:已知等腰三角形的三边长分别为a,b,4,且a,b是关于x的一元二次方程x2-12x+m+2=0的两根，则m的值为（     ）</p>
+<label id="4"><input type="radio" name="answer4" value="5"/>34</label>
+<br />
+<label><input type="radio" name="answer4" value="0"/>30或34</label>
+<br/>
+<label><input type="radio" name="answer4" value="0"/>30</label>
+</fieldset>
+ 
+<fieldset class ="question">
+<p id="5">（简单）问题5: 若一元二次方程x2-3x+1=0的两根为a,b,则a2+3b+ab-4的值为（      ）</p>
+<label><input type="radio" name="answer5" value="0"/>7</label>
+<br />
+<label><input type="radio" name="answer5" value="0"/>9</label>
+<br/>
+<label id="5"><input type="radio" name="answer5" value="5"/>5</label>
+</fieldset>
+ 
+<fieldset class ="question">
+<p id="6">（简单）问题6:不透明的布袋中有除颜色外没有其他任何区别的1个红球和2个白球，搅拌后从中摸出一个球，放回搅匀，再摸出一个球，两次都摸到白球的概率为（      ）</p>
+<label><input type="radio" name="answer6" value="0"/>2/9</label>
+<br />
+<label id="6"><input type="radio" name="answer6" value="5"/>4/9</label>
+<br/>
+<label><input type="radio" name="answer6" value="0"/>1/3</label>
+</fieldset>
+ 
+<fieldset class ="question">
+<p id="7">（逻辑题）问题7: 假设这道题有3个选项未知答对率，那你做对这道题的概率为</p>
+<label><input type="radio" name="answer7" value="0" />0%</label>
+<br />
+<label id="7"><input type="radio" name="answer7"  value="20"/>100%</label>
+<br/>
+<label><input type="radio" name="answer7"  value="0"/>50%</label>
+</fieldset>
+ 
+<fieldset class ="question">
+<p id="8">（简单）问题8:猫猫从红黑白3件上衣和白黑2条帅气到爆的裤子中选衣服，则它穿着“衣裤同色”的概率为（      ）</p>
+<label><input type="radio" name="answer8" value="0"/>1/4</label>
+<br />
+<label id="8"><input type="radio" name="answer8" value="5"/>1/3</label>
+<br/>
+<label><input type="radio" name="answer8"  value="0"/>2/3</label>
+</fieldset>
+ 
+<fieldset class ="question">
+<p id="9">（极难）问题9:有两个细胞，每个细胞每次分裂成2个细胞或死亡的概率为1/2，求分裂两次后有细胞存活的概率（      ） </p>
+<label id="9"><input type="radio" name="answer9"  value="5"/>39/64</label>
+<br />
+<label><input type="radio" name="answer9"  value="0"/>36/73</label>
+<br/>
+<label><input type="radio" name="answer9"  value="0"/>39/61</label>
+</fieldset>
+</div>
+</fieldset>
+ 
+<fieldset>
+<h3>多选题（每题10分，每个问题只选对一个得5分）</h3  >
+<div id="grey">
+<fieldset class ="question">
+<p id="10">（简单）问题10:一个平面坐标系中能与原图形位似的象限有几个，那相似图形又有几个</p>
+<input type="checkbox" name="answer10" value="5"/><span id="10">4</span>
+<br />
+<input type="checkbox" name="answer10"  value="5"/><span id="10">无穷”</span>
+<br/>
+<input type="checkbox" name="answer10"  value="0"/><span>3</span>
+<br/>
+<input type="checkbox" name="answer10"   value="0"/><span>10</span>
+</fieldset>
+<fieldset class ="question">
+<p id="11">（简单）问题11:若abc≠0，且a+b/c=b+c/a=c+a/b，求(a+b)(b+c)(c+a)/abc的值（     ）</p>
+<input type="checkbox" name="answer11" value="5"/><span id="11">8</span>
+<br />
+<input type="checkbox" name="answer11"  value="5"/><span id="11">-1</span>
+<br/>
+<input type="checkbox" name="answer11"  value="0"/><span >-8</span>
+<br/>
+<input type="checkbox" name="answer11"  value="0"/><span >1</span>
+</fieldset>
+<fieldset class ="question">
+<p id="12">（较难）问题12:a-b=2，ab+2b-c2+2c=0，当b≥0,-2≤c＜1时，整数a的值是（      ）</p>
+<input type="checkbox" name="answer12"  value="0"/><span >4</span>
+<br />
+<input type="checkbox" name="answer12"  value="0"/><span>1</span>
+<br/>
+<input type="checkbox" name="answer12"  value="5"/><span id="12">2</span>
+<br />
+<input type="checkbox" name="answer12"  value="5"/><span id="12">3</span>
+</fieldset>
+<fieldset class ="question">
+<p id="13">（难）问题13:求方程x+y=x2-xy+y2+1的实数解</p>
+<input type="checkbox" name="answer13" value="0"/><span>x=0</span>
+<br />
+<input type="checkbox" name="answer13"  value="5"/><span id="13">y=1</span>
+<br/>
+<input type="checkbox" name="answer13"  value="0"/><span >y=2</span>
+<br/>
+<input type="checkbox" name="answer13"  value="5"/><span id="13">x=1</span>
+</fieldset>
+<fieldset class ="question">
+<p id="14">（难）问题14:试求出这样的四位数，它的前两位数字与后两位数字分别组成的两位数之和的平方，恰好等于这个四位数</p>
+<input type="checkbox" name="answer14" value="5"/><span id="14">2025</span>
+<br />
+<input type="checkbox" name="answer14"  value="0"/><span>2023</span>
+<br/>
+<input type="checkbox" name="answer14"  value="0"/><span >3030</span>
+<br/>
+<input type="checkbox" name="answer14"  value="5"/><span id="14">3025</span>
+</fieldset>
+<fieldset class ="question">
+<p id="15">（难）问题15:当a，b为何值时，方程x2+2(1+a)x+3a2+4ab+4b2+2=0</p>
+<input type="checkbox" name="answer15" value="0"/><span>a=-1</span>
+<br />
+<input type="checkbox" name="answer15"  value="5"/><span id="15">a=1</span>
+<br/>
+<input type="checkbox" name="answer15"  value="0"/><span >b=1/2</span>
+<br/>
+<input type="checkbox" name="answer15"  value="5"/><span id="15">b=-1/2</span>
+</fieldset>
+</div>
+</fieldset>
+<button type="button" onclick="coreCount()" >提交</button>
+<button type="button" onclick="showWhichWrong()" >查询错误（不适用多选题，因为多选题对一个是不标红的）</button>
+</fieldset>
+ 
+</form>
+ 
+<script>
+    //禁用操作
+    
+    window.onload = function(){
+        document.onkeydown = function (){
+            var e = window.event || arguments[0];
+            //F12
+            if(e.keyCode == 123){
+                return false;
+            //Ctrl+Shift+I
+            }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+                return false;
+            //Ctrl+Shift+C
+            }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 67)){
+                return false;
+            //Shift+F10
+            }else if((e.shiftKey) && (e.keyCode == 121)){
+                return false;
+            //Ctrl+U
+            }else if((e.ctrlKey) && (e.keyCode == 85)){
+                return false;
+            //Ctrl+S
+            }else if((e.ctrlKey) && (e.keyCode == 83)){
+            return false;
+        }
+    };
+        document.oncontextmenu = function (){
+            return false;
+        }
+    }
+    
+    //禁止复制
+    document.onselectstart=new Function('event.returnValue=false;');
+    
+    //禁止选择文字
+    document.body.onselectstart = function() {
+        self.event.returnValue=false
+      };
+</script>
+<audio autoplay="" loop=""> <source src="./music/1.mp3"></audio>
+</body">
+ 
+</html>
